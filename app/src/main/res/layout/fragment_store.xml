@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fadingEdge="vertical"
+    android:orientation="vertical"
+    tools:context=".drawermenuitems.store.StoreFragment">
+
+
+    <SearchView
+        android:id="@+id/searchviewId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4757AE"
+        android:elevation="10dp"
+        android:fadingEdge="horizontal"
+        android:focusedByDefault="true"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="false"
+        android:iconifiedByDefault="false"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:queryHint="@string/queryHint"
+        android:requiresFadingEdge="horizontal"
+        android:searchIcon="@drawable/ic_white_search_24"
+        android:textAlignment="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchedproduct_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+</LinearLayout>
